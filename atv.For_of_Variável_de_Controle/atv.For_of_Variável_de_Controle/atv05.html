@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que peça para o usuário informar um número. Identifique se o número fornecido pelo usuário é um número primo e apresente na tela.
+    */
+
+    //ENTRADA 
+    const numero = Number(prompt(`Digite um número aleatorio`));
+    let dividido = 0
+    //PROCESSAMENTO
+    for (let contador = 1; contador <= numero; contador++) {
+        if (numero % contador === 0) {
+            dividido = dividido + 1;
+        }
+   }
+   if (dividido === 2) {
+            document.write(`O número ${numero} é um número primo`);
+        }
+        else {
+            document.write(`O número ${numero} não é um número primo`);
+        }
+ 
+
+    //SAÍDA
+
+</script>
